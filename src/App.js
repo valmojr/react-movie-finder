@@ -15,7 +15,7 @@ function App() {
       <AppFrame>
         <Searcher/>
           <Routes>
-            <Route path='/' element={<HomePage/>}/>
+            <Route path='/react-movie-finder' element={<HomePage/>}/>
             <Route path='/MovieList/:searchedTitle' element={<MovieLister data={{searchedTitle,setSearchedTitle}}/>}/>
             <Route path='/MovieView/:searchedTitleId' element={<MovieViewer/>}/>
             <Route path='*' element={<ErrorPage/>}/>
